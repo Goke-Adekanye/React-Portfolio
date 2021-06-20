@@ -1,0 +1,136 @@
+/* .services-section {
+    position: relative;
+    overflow: hidden;
+} */
+.services-first,
+.services-second,
+.services-third{
+    padding: 15px;
+}
+
+.services-first {
+    max-width: 50%;
+    padding-top: 2rem;
+}
+
+.services-section .services-first h4,
+.services-section h2 {
+    color: #739484;
+}
+
+.services-section h2 span {
+    color: var(--main-color) !important;
+}
+
+.services-section .services-first p {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: var(--blue-dark);
+} 
+
+/* SERVICES-SECOND  */
+.services-section .services-second {
+    margin-bottom: 30px;
+    padding: 3rem 0 3rem 0;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-section .card {
+    margin: 24px 15px 0;
+    width: 17.7rem;
+    min-height: 15rem;
+    max-width: 100%;
+    display: flex;
+    position: relative !important;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40) !important;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.services-section .card::before{
+    content: '';
+    position: absolute;
+    color: #739484;
+    background:
+        url('/src/img/logo.png')
+        center center/ contain
+        no-repeat
+    ;
+    width: 50%;
+    height: 45%;
+    bottom: -4%;
+    right: -5%;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.services-section .card .card-body {
+    width: 100%;
+    padding: 24px 20px;
+}
+
+.services-section .card .title {
+    display: flex;
+    align-items: center;
+}
+
+.services-section .card .MuiSvgIcon-root {
+    margin-right: 1rem;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6ab8ab;
+}
+
+.services-section .card h4 {
+    font-size: 24px;
+    color: var(--main-color);
+    line-height: 120%;
+    padding-top: 5px;
+}
+
+.services-section .card p {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 180%;
+    color: #739484;
+}
+
+/* SERVICES THIRD */
+.services-third .faqs-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.services-third .faqs-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.services-third .faqs-title h3 span {
+    color: #739484;
+}
+
+.services-third .faqs-accordion-container {
+    display: flex;
+    width: 100%;
+}
+
+.services-third .faqs-accordion-container .acc-inner {
+    width: 100%;
+    display: flex;
+    padding: 60px 45px;
+    flex-direction: column;
+    margin: auto;
+}
+

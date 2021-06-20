@@ -1,0 +1,147 @@
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0 0;
+    position: absolute;
+    z-index: 1;
+}
+header.active {
+    padding: 20px 15px;
+    top: 35px;
+    position: fixed;
+}
+.header.active .container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.header .nav-toggler {
+    margin: 0 15px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.header .nav-toggler.hide {
+    opacity: 0;
+    transition: none;
+}
+
+/* :not(): property doesn't apply when header.active */
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after {
+    width: 50%;
+}
+
+.header .nav-toggler span {
+    height: 2px;
+    width: 24px;
+    position: relative;
+    background-color: var(--main-color);
+    transition: background-color 0.3s ease;
+}
+.header.active .nav-toggler span {
+    background-color: transparent;
+}
+
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+.header .nav-toggler span::before {
+    left: 0;
+    transform: translateY(-8px);
+}
+.header.active .nav-toggler span::before {
+    transform: rotate(45deg);
+}
+.header .nav-toggler span::after {
+    right: 0;
+    transform: translateY(8px);
+}
+.header.active .nav-toggler span::after {
+    transform: rotate(-45deg);
+}
+
+/* NAV  */
+.header .nav {
+    padding: 35px 15px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: auto;
+    visibility: hidden;  
+}
+.header.active .nav {
+    visibility: visible;
+}
+
+.header .nav-inner {
+    margin: auto;
+    padding: 50px 0;
+    min-height: calc(100vh - 70px);
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-alpha-25);
+    backdrop-filter: var(--backdrop-filter-blur);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 0.5s ease;  
+}
+.header.active .nav-inner {
+    opacity: 1;
+}
+
+.header .nav-inner ul li{
+    text-align: center;
+ }
+ .header .nav-inner ul li a {
+    padding: 8px 15px;
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--blue-dark);
+    transition: color 0.3s ease;
+    position: relative;
+}
+.header .nav-inner ul li a:hover {
+    color: var(--main-color);
+}
+
+.header .nav-inner ul li a::before {
+    content: "";
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 0%;
+    position: absolute;
+    background-color: var(--white-alpha-25);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.header .nav-inner ul li a:hover::before {
+    width: 100%;
+}
+
+/*END OF NAV  */
