@@ -12,6 +12,37 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <!-- END OF PAGE LOADER -->
+
+<!-- BACKGROUND CIRCLE  -->
+<div class="bg-shapes">
+  <div class="square-1"></div>
+  <div class="square-2"></div>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+</div>
+<!-- END OF BACKGROUND CIRCLE  -->
+
     <div id="root"></div>
+
+    <script>// PAGE LOADER
+      // on-page-load
+      window.addEventListener("load", () => {
+        document.querySelector(".main").classList.remove("hidden");
+      
+        // page-loader
+        document.querySelector(".page-loader").classList.add("fade-out");
+        setTimeout(() => {
+          document.querySelector(".page-loader").style.display = "none";
+        }, 500);
+      });
+      // END OF PAGE LOADER</script>
   </body>
 </html>

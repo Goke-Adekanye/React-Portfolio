@@ -4,7 +4,7 @@ import { Home, About, Services, Contact } from "./pages";
 import { Header } from "./components";
 function App() {
   return (
-    <div className="main">
+    <div className="main hidden">
       <Router>
         <Header />
 

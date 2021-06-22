@@ -203,8 +203,133 @@ button {
       opacity: 0;
   }
 }
+@keyframes bounceTop {
+  0%, 100% {
+      transform: translateY(-50px);
+  }
+  50% {
+      transform: translateY(0px);
+  }
+}
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes zoomInOut {
+  0%, 100% {
+      transform: scale(0.5);
+  }
+  50% {
+      transform: scale(1);
+  }
+}
 /* END OF ANIMATION KEYFRAMES  */
 /* END OF GLOBAL STYLES  */
+
+/* BACKGROUND SHAPES  */
+.bg-shapes {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  position: fixed;
+  transform: translateX(-50%);
+  /* z-index: 999; */
+
+}
+
+.bg-shapes div {
+  position: absolute;
+}
+
+.bg-shapes .square-1 {
+  top: 10%;
+  left: -2%;
+  height: 60px;
+  width: 60px;
+  opacity: 0.3;
+  background-color: #739484;
+  animation: spin 1s linear infinite;
+}
+
+.bg-shapes .square-2 {
+  top: 50%;
+  left: 30%;
+  height: 80px;
+  width: 80px;
+  opacity: 0.4;
+  background-color: var(--blue-dark);
+  animation: bounceTop 5s ease-in-out infinite;
+}
+
+.bg-shapes .circle-1 {
+  top: 40%;
+  right: -60px;
+  height: 120px;
+  width: 120px;
+  opacity: 0.6;
+  border-radius: 50%;
+  background-color: var(--white);
+  animation: zoomInOut 8s linear infinite;
+}
+.bg-shapes .circle-2 {
+  top: 80%;
+  left: -30px;
+  height: 50px;
+  width: 80px;
+  opacity: 0.6;
+  background-color: #ffdcbe;
+}
+/* END OF BACKGROUND SHAPES  */
+
+/* PAGE LOADER  */
+.page-loader {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--backdrop-filter-blur);
+  z-index: 999;
+  transition: opacity 0.5s ease;
+}
+.page-loader.fade-out {
+  opacity: 0;
+}
+
+.page-loader div {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  animation: spin 1s linear infinite;
+}
+.page-loader div:nth-child(1) {
+  height: 60px;
+  width: 60px;
+  border-color: var(--main-color);
+}
+.page-loader div:nth-child(2) {
+  height: 45px;
+  width: 45px;
+  border-color: var(--main-color);
+}
+.page-loader div:nth-child(3) {
+  height: 30px;
+  width: 30px;
+  border-color: var(--main-color);
+}
+/* END OF PAGE LOADER  */
 
 /* RESPONSIVE  */
 @media (max-width: 991px) {
