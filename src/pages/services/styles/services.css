@@ -154,4 +154,8 @@
     .services-third .faqs-title h3 {
         font-size: 22px;
     }
+
+    .services-third .faqs-accordion-container .acc-inner {
+        padding: 60px 10px;
+    }
 }
