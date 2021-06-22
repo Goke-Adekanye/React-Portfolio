@@ -11,10 +11,11 @@ export default function Contact() {
         <div className="row contact-hero align-items-center">
           <div className="contact-text">
             <h1>
-              We Love to <br /> hear your <span>feedback</span>
+              I Love to <br /> hear your <span>feedback</span>
             </h1>
             <h5>
-              let us know what we can do to provide you with better solutions
+              Do you want to get in touch or discuss a Project? <br />
+              let me know what I can do to provide you with better solutions.
             </h5>
           </div>
 

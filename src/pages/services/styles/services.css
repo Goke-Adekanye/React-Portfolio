@@ -15,7 +15,7 @@
 
 .services-section .services-first h4,
 .services-section h2 {
-    color: #739484;
+    color: #4F644F;
 }
 
 .services-section h2 span {
@@ -103,7 +103,7 @@
     margin: 0 0 16px;
     font-size: 16px;
     line-height: 180%;
-    color: #739484;
+    color: var(--main-color);
 }
 
 /* SERVICES THIRD */
@@ -118,7 +118,7 @@
     text-transform: capitalize;
 }
 .services-third .faqs-title h3 span {
-    color: #739484;
+    color: #4F644F;
 }
 
 .services-third .faqs-accordion-container {

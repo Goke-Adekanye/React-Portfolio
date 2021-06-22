@@ -31,13 +31,12 @@
     text-transform: capitalize;
 }
 .contact-text h1 span{
-    color: #739484;
+    color: #4F644F;
 }
 
 .contact-text h5 {
     font-weight: 300;
     font-size: 20px;
-    text-transform: capitalize;
     margin: 0 0 15px;
 }
 
@@ -63,16 +62,16 @@
 }
 
 .contact-form .MuiInput-underline:before {
-    border-bottom: 1px solid #739484;
+    border-bottom: 1px solid #4F644F;
 }
 .contact-form .MuiInput-underline:after {
-    border-bottom: 2px solid #739484;
+    border-bottom: 2px solid #4F644F;
 }
 
 .contactInfo_item {
     line-height: 34px !important;
     font-size: 18px !important;
-    color: #739484;
+    color: #4F644F;
 }
 
 .contactInfo_item > span {

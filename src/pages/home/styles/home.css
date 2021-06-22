@@ -14,16 +14,16 @@
 }
 .home-text h1 {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
+    line-height: normal;
     text-transform: capitalize;
 }
 .home-text h1 span{
-    color: #739484;
+    color: #4F644F;
 }
 .home-text h2 {
     font-weight: 300;
     font-size: 20px;
-    text-transform: capitalize;
     margin: 0 0 30px;
 }
 .home-text .btn {
@@ -32,9 +32,13 @@
 
 .home-img .img-box {
     margin: auto;
+    padding: .5rem;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 .home-img .img-box img {
     width: 100%;
+    
 }
 
 /* RESPONSIVE  */
