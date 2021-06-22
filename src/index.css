@@ -205,3 +205,17 @@ button {
 }
 /* END OF ANIMATION KEYFRAMES  */
 /* END OF GLOBAL STYLES  */
+
+/* RESPONSIVE  */
+@media (max-width: 991px) {
+  .container {
+    padding: 0;
+  } 
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+      font-size: 35px;
+  }
+}
+/* END OF RESPONSIVE  */

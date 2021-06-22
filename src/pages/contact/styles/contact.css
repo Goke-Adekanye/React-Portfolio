@@ -93,3 +93,26 @@
     border: 1px solid var(--white-alpha-40);
     border-radius: .25rem;
 }
+
+@media (max-width: 959px) {
+    .contact-section::before {
+        height: 53%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-text,
+    .contact-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-section::before {
+        height: 50%;
+    }
+
+    .contact-text h1 {
+        font-size: 37px;
+    }
+}

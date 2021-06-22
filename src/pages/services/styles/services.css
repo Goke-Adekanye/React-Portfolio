@@ -51,7 +51,7 @@
     border: none;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.services-section .card::before{
+/* .services-section .card::before{
     content: '';
     position: absolute;
     color: #739484;
@@ -66,7 +66,7 @@
     right: -5%;
     opacity: 0.25;
     z-index: -1;
-}
+} */
 
 .services-section .card .card-body {
     width: 100%;
@@ -134,3 +134,24 @@
     margin: auto;
 }
 
+/* RESPONSIVE  */
+@media (max-width: 767px) {
+    .services-first {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    .services-section .services-first p {
+        margin-bottom: .5rem;
+    } 
+
+    .services-section .card h4 {
+        font-size: 20px;
+    }
+
+    .services-third .faqs-title h3 {
+        font-size: 22px;
+    }
+}

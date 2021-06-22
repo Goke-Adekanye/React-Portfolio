@@ -57,9 +57,7 @@ export default function About() {
                     {item.icon}
                     <h5>{item.title}</h5>
                     <p>{item.description}</p>
-                    <div className="steps d-none d-md-block d-lg-block">
-                      {item.step}
-                    </div>
+                    <div className="steps d-none">{item.step}</div>
                   </div>
                 </div>
               </div>

@@ -145,3 +145,10 @@ header.active {
 }
 
 /*END OF NAV  */
+
+/* RESPONSIVE  */
+@media (max-width: 575px) {
+    .header .nav-inner ul li a {
+        font-size: 35px;
+    }
+}

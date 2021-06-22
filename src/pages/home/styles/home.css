@@ -36,3 +36,45 @@
 .home-img .img-box img {
     width: 100%;
 }
+
+/* RESPONSIVE  */
+@media (max-width: 901px) {
+    .home-text,
+    .home-img {
+        width: 100%;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+    .home-text .btn {
+        margin: 0 7px 15px;
+    }
+
+    .home-img .img-box {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-img .img-box {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-text p {
+        font-size: 1.5rem;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+    .home-text h2 {
+        font-size: 18px;
+    }
+
+    .home-img .img-box {
+        max-width: 350px;
+    }
+}
