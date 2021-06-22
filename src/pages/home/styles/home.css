@@ -32,9 +32,6 @@
 
 .home-img .img-box {
     margin: auto;
-    padding: .5rem;
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
-
 }
 .home-img .img-box img {
     width: 100%;
