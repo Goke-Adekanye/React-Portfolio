@@ -50,7 +50,7 @@ export default function Header() {
 
                 <Link to="/about">
                   <li onClick={gotoPage}>
-                    <a href="#about" className="nav-item link-item">
+                    <a href="#about" className="nav-item">
                       about
                     </a>
                   </li>
@@ -58,15 +58,27 @@ export default function Header() {
 
                 <Link to="/services">
                   <li onClick={gotoPage}>
-                    <a href="#portfolio" className="nav-item link-item">
+                    <a href="#portfolio" className="nav-item">
                       services
                     </a>
                   </li>
                 </Link>
 
+                <li>
+                  <a
+                    href="https://github.com/Goke-Adekanye?
+                    tab=repositories"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="nav-item"
+                  >
+                    portfolio
+                  </a>
+                </li>
+
                 <Link to="/contact">
                   <li onClick={gotoPage}>
-                    <a href="#contact" className="nav-item link-item">
+                    <a href="#contact" className="nav-item">
                       contact
                     </a>
                   </li>

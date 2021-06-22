@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/home.css";
 
 export default function Home() {
@@ -15,11 +16,18 @@ export default function Home() {
             </h1>
             <h2>can only get better...</h2>
 
-            <a href="#about" className="btn btn-green link-item">
-              about us
-            </a>
-            <a href="#portfolio" className="btn link-item">
-              services
+            <Link to="/about">
+              <a href="#about" className="btn btn-green link-item">
+                about me
+              </a>
+            </Link>
+            <a
+              href="https://gokeadekanye.medium.com/"
+              rel="noreferrer"
+              target="_blank"
+              className="btn link-item"
+            >
+              blog
             </a>
           </div>
 

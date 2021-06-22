@@ -36,8 +36,13 @@ export default function About() {
               aliquid expedita doloribus ipsam iste, rerum, quam dolores
               corporis?
             </p>
-            <a href="#about" className="btn btn-green link-item">
-              contact us
+            <a
+              href="https://drive.google.com/file/d/1ch2R0yHYbaKxiOqBAy-HdU03kXaiQ6hn/view?usp=sharing"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-green link-item"
+            >
+              download CV
             </a>
           </div>
         </div>
