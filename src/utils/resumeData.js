@@ -5,9 +5,9 @@ import {
   GitHub,
   Code,
   FindReplace,
-  AccountBalanceWallet,
-  SignalCellularAlt,
-  School,
+  WebOutlined,
+  Devices,
+  Language,
   Assignment,
   BrightnessMedium,
 } from "@material-ui/icons";
@@ -68,48 +68,48 @@ export default {
 
   services: [
     {
-      icon: <AccountBalanceWallet />,
-      title1: "Financial",
-      title2: "Services",
+      icon: <WebOutlined />,
+      title1: "Web",
+      title2: "Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+        "As a professional Web Developer,I tend to employ the use of latest/various web technologies such as HTML, CSS, JavaScript, React and Node to build attractive websites or develop web apps which portrays the exact functionalities specified by the client.",
     },
     {
-      icon: <SignalCellularAlt />,
-      title1: "Reliable",
-      title2: "Signal",
+      icon: <Devices />,
+      title1: "Responsive",
+      title2: "Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+        "With the number of people accessing the internet through mobile devices increases every day, prioritizing user experience became a necessity. I build fully responsive cross-browser websites/web apps that automatically adjust on different screen sizes and viewports.",
     },
     {
-      icon: <School />,
-      title1: "Training",
-      title2: "Satisfaction",
+      icon: <Language />,
+      title1: "Testing &",
+      title2: "Hosting",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+        "During and after implementation, I use testing libraries such as React testing library to test the site for usability and fixing any bugs. I also make websites/web apps accessible worldwide through hosting, ensuring they are safe and secure with SSL verification.",
     },
   ],
 
   faqs: [
     {
       id: 1,
-      header: "What is Forex?",
-      body: "ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+      header: "A website proves your brand credibility",
+      body: "Over 30% don’t even consider a business if it doesn’t have any website. So, if you want people to think your business is credible, contact Me.",
     },
     {
       id: 2,
-      header: "What are Signals?",
-      body: "ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+      header: "Brands with a website are easily accessible",
+      body: "Whenever it comes to engaging with a business, over 63% of customers use a company’s official website. ",
     },
     {
       id: 3,
-      header: "Any criteria for learning Forex?",
-      body: "ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+      header: "Showcase your products/services the best way possible",
+      body: "A website provides an avenue for you to showcase your expertise in the best way possible",
     },
     {
       id: 4,
-      header: "How do I get started?",
-      body: "ipsum dolor sit amet consectetur adipisicing elit. Magni velit fuga nam! Libero id perferendis voluptates recusandae laborum, ab totam tenetur consectetur! Provident, sit ipsam!",
+      header: "A website makes your brand more visible",
+      body: "Online presence creates a wide demography which significantly boost sales by helping brands to quickly acquire more customers.",
     },
   ],
 };

@@ -8,14 +8,11 @@ export default function Services() {
     <section className="section services-section sec-padding">
       <div className="container">
         <div className="row services-first">
-          <h4>Who can use our Services?</h4>
+          <h4>Want to know about my Services?</h4>
           <h2>
-            Reliable signal for <span>every Individual.</span>
+            Reliable solutions for <span>every Individual.</span>
           </h2>
-          <p>
-            To be an expert in the Forex industry, all you have to do is be a
-            part of our community.
-          </p>
+          <p>Services I render include but not limited to the following;</p>
         </div>
 
         <div className="row services-second">
@@ -41,7 +38,7 @@ export default function Services() {
         <div className="row services-third">
           <div className="row faqs-title align-items-center">
             <h3>
-              <span>Frequently</span> asked questions
+              <span>Why you</span> need a website
             </h3>
           </div>
 
