@@ -3,13 +3,13 @@ import {
   Twitter,
   LinkedIn,
   GitHub,
-  Person,
-  InsertChart,
-  VerifiedUser,
+  Code,
+  FindReplace,
   AccountBalanceWallet,
   SignalCellularAlt,
   School,
   Assignment,
+  BrightnessMedium,
 } from "@material-ui/icons";
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -45,24 +45,24 @@ export default {
 
   about: [
     {
-      icon: <Person />,
-      title: "Register",
+      icon: <BrightnessMedium />,
+      title: "Define",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quae doloremque?",
+        "I conduct user research and brainstorm potential design solutions to the identified problem.",
       step: <i className=" step fa fa-arrow-right"></i>,
     },
     {
-      icon: <InsertChart />,
-      title: "Start Class",
+      icon: <FindReplace />,
+      title: "Blueprint",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quae doloremque?",
+        "I devise high-fidelity designs and explore the technology needed best to get the job done.",
       step: <i className=" step fa fa-arrow-right"></i>,
     },
     {
-      icon: <VerifiedUser />,
-      title: "Get Certified",
+      icon: <Code />,
+      title: "Implement",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus minima quae doloremque?",
+        "I develop creative solutions that solve the problem while also meeting the client's expectations.",
     },
   ],
 
