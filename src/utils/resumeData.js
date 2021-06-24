@@ -16,9 +16,9 @@ import {
 export default {
   name: "Goke Adekanye",
   title: "Front End Developer",
-  email: "Example@gmail.com",
+  email: "adekanyeadegoke96@gmail.com",
   location: "Lagos, NG",
-  phone: "+234 80683 *****",
+  phone: "+234 80683 50106",
 
   socials: {
     linkedIn: {
