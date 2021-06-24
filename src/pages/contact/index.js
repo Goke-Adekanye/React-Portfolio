@@ -1,10 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/contact.css";
 import { CustomButton } from "../../components";
 import { Grid, TextField, Typography } from "@material-ui/core";
 import resumeData from "../../utils/resumeData";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let data = [];
+    data.name = name;
+    data.email = email;
+    data.message = message;
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSuccess(true);
+      })
+      .catch((error) => alert(error));
+  };
+
+  const isInvalid = name === "" || email === "" || message === "";
   return (
     <section className="section contact-section sec-padding ">
       <div className="container">
@@ -28,10 +61,26 @@ export default function Contact() {
 
         <Grid container className="row">
           <Grid item xs={12} md={7} lg={7} className="contact-form">
-            <form action="">
+            {success && (
+              <p style={{ color: "#4F644F" }}>Thanks for your message! </p>
+            )}
+            <form
+              name="contact"
+              method="POST"
+              action="/"
+              data-netlify="true"
+              onSubmit={handleSubmit}
+            >
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
-                  <TextField fullWidth type="text" name="name" label="Name" />
+                  <TextField
+                    fullWidth
+                    type="text"
+                    name="name"
+                    label="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <TextField
@@ -39,6 +88,8 @@ export default function Contact() {
                     type="email"
                     name="email"
                     label="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -47,12 +98,18 @@ export default function Contact() {
                     type="text"
                     name="message"
                     label="Message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     multiline
                     rows={4}
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <CustomButton type={"submit"} text={"Submit"} />
+                  <CustomButton
+                    type={"submit"}
+                    text={"Submit"}
+                    disabled={isInvalid}
+                  />
                 </Grid>
               </Grid>
             </form>
