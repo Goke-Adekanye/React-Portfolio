@@ -62,7 +62,9 @@ export default function Contact() {
         <Grid container className="row">
           <Grid item xs={12} md={7} lg={7} className="contact-form">
             {success && (
-              <p style={{ color: "#4F644F" }}>Thanks for your message! </p>
+              <p style={{ color: "#4F644F" }}>
+                Thanks for your message! You should get a reply within 24 hours.
+              </p>
             )}
             <form
               name="contact"
