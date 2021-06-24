@@ -15,8 +15,8 @@ export default function Home() {
               I'm Goke <span>Adekanye</span>
             </h1>
             <h2>
-              I'm a Frontend Web Developer with a great eye for design. Do you
-              need me to build your Website or develop a Web App?
+              A Frontend Web Developer with a great eye for design. Do you need
+              me to build your Website or develop a Web App?
             </h2>
 
             <Link to="/about">
