@@ -66,8 +66,7 @@ export default function Header() {
 
                 <li>
                   <a
-                    href="https://github.com/Goke-Adekanye?
-                    tab=repositories"
+                    href="https://github.com/Goke-Adekanye"
                     rel="noreferrer"
                     target="_blank"
                     className="nav-item"
