@@ -44,7 +44,7 @@ export default function About() {
               strategic thinking, Time Keeping, and Project Management.
             </p>
             <a
-              href="https://drive.google.com/file/d/1ch2R0yHYbaKxiOqBAy-HdU03kXaiQ6hn/view?usp=sharing"
+              href="https://drive.google.com/file/d/15rvZqjUou261stawj4T3Aj-JNpidAe3E/view?usp=sharing"
               rel="noreferrer"
               target="_blank"
               className="btn btn-green link-item"
