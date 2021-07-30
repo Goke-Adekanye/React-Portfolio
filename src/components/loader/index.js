@@ -3,7 +3,7 @@ import "./styles/loader.css";
 
 export default function Loader() {
   return (
-    <div class="page-loader">
+    <div className="page-loader">
       <div></div>
       <div></div>
       <div></div>
