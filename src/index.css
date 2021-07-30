@@ -287,50 +287,6 @@ button {
 }
 /* END OF BACKGROUND SHAPES  */
 
-/* PAGE LOADER  */
-.page-loader {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white-alpha-25);
-  backdrop-filter: var(--backdrop-filter-blur);
-  z-index: 999;
-  transition: opacity 0.5s ease;
-}
-.page-loader.fade-out {
-  opacity: 0;
-}
-
-.page-loader div {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  border-top-color: transparent !important;
-  border-bottom-color: transparent !important;
-  animation: spin 1s linear infinite;
-}
-.page-loader div:nth-child(1) {
-  height: 60px;
-  width: 60px;
-  border-color: var(--main-color);
-}
-.page-loader div:nth-child(2) {
-  height: 45px;
-  width: 45px;
-  border-color: var(--main-color);
-}
-.page-loader div:nth-child(3) {
-  height: 30px;
-  width: 30px;
-  border-color: var(--main-color);
-}
-/* END OF PAGE LOADER  */
-
 /* RESPONSIVE  */
 @media (max-width: 991px) {
   .container {
