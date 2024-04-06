@@ -17,31 +17,40 @@ export default function About() {
         <div className="row align-items-center">
           <div className="about-img">
             <div className="img-box">
-              <img src="images/img/about-img.svg" alt="about-img" />
+              <img src="images/img/_image_.png" alt="about-img" />
             </div>
           </div>
 
           <div className="about-text">
             <p>
-              Hello, I’m Goke Adekanye, a professional Frontend Web Developer
-              based in Lagos State, Nigeria. As a graduate of Computer Science
-              (BSc.), I am passionate about leveraging my solid background in
-              Information Technology to decipher challenging problems and create
-              innovative solutions that contribute positively to the IT
-              ecosystem.
-              <br /> Being an inquisitive individual, I am constantly exploring
-              the latest technologies that empower me to discover new and better
-              ways to do things. I am independent, innovative, full of energy,
-              and highly motivational. Not only am I well organized, but I am
-              also a team player with enthusiasm for reaching completion stages
-              and finishing tasks at hand.
-              <br /> I collaborate effectively to implement and transform ideas
-              into finished products. Due to my work demands, I enjoy traveling,
-              but I also work remotely. I sometimes work alone, but I also
-              collaborate with other professionals or tech companies for
-              Outsourced Projects and Partnerships. I’m a Goal-Oriented
-              individual with excellent communication skills coupled with
-              strategic thinking, Time Keeping, and Project Management.
+              <b>Summary:</b> - Skilled React Developer with 3+ years of
+              experience building performant and user-focused web applications.
+              Proven ability to architect scalable and maintainable React
+              codebases, implement robust error handling, and collaborate
+              effectively with cross-functional teams. Committed to remaining
+              abreast of cutting-edge React advancements and contributing to a
+              culture of continuous improvement.
+              <br />
+              <br />
+              <b>Languages and Frameworks:</b> JavaScript, React.JS, Next.JS,
+              Typescript, Node.JS, HTML, CSS, SCSS, Bootstrap, Tailwind CSS,
+              Git, MongoDB.
+              <br />
+              <br /> <b>API and Data Integration:</b> - Skilled in integrating
+              RESTful APIs with React applications using Node.JS to optimize
+              data retrieval and enhance application performance. - Proficient
+              in handling asynchronous requests with a focus on diverse response
+              types (JSON, text).
+              <br />
+              <br /> <b>Performance Optimization:</b> - Experienced in
+              implementing performance optimization techniques such as lazy
+              loading and code-splitting, resulting in a 20% reduction in page
+              load time (Figtec project).
+              <br />
+              <br />
+              <b>State Management:</b> - Extensive experience with Redux and
+              Context in managing complex application states efficiently across
+              multiple React projects.
             </p>
             <a
               href="/contact"
